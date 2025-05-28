@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--link css-->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="quiz-wrapper">
+        <diz class="quiz-box" id="quiz">
+            <div class="question-count">
+                <p class="count"><span id="count-question">3</span>/<strong id="tol-num-que">10</strong></p>
+                <p class="question-title">Question</p>
+            </div>
+            <div class="question-box">
+                <span id="question-number">3</span>
+                <p id="question">o que significa as siglas DNA e RNA?</p>
+            </div> 
+            <div class="answers-box">
+                <div class="box">
+                    <div class="answer-number">A</div>
+                    <input type="radio" name="option" id="first" value="a" required hidden>
+                    <label for="first" class="answer-lable">Testing 1</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">B</div>
+                    <input type="radio" name="option" id="second" value="b" required hidden>
+                    <label for="second" class="answer-lable">Testing 2</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">C</div>
+                    <input type="radio" name="option" id="third" value="c" required hidden>
+                    <label for="third" class="answer-lable">Testing 3</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">D</div>
+                    <input type="radio" name="option" id="fourth" value="d" required hidden>
+                    <label for="fourth" class="answer-lable">Testing 4</label>
+                </div>
+            </div>
+
+            <div class="button-box">
+                <button type="button" class="next-btn button" id="next-question-btn">Next Question</button>
+                <button type="button" class="next-btn button submite-bnt" id="submite">Submite Now</button>
+            </div>
+        </diz>
+    </div>
+    <!--Js link-->
+    <script src="script.js"></script>
+</body>
+</html>
