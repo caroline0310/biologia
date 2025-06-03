@@ -1,0 +1,134 @@
+/* Fundo com imagem cobrindo toda a tela */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://static.vecteezy.com/ti/vetor-gratis/p1/417941-evolucao-do-humano-na-terra-gratis-vetor.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* filtro escuro */
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Mantém as cartas e texto legíveis com fundo branco e bordas */
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card {
+    width: 120px;
+    height: 160px;
+    background-color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+    transition: transform 0.4s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.flip .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background: #888;
+}
+
+.card-back {
+    background: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 14px;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-back img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-back span {
+    padding: 10px;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#restartBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+}
+
+#restartBtn:hover {
+    background-color: #007acc;
+}

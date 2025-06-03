@@ -1,0 +1,38 @@
+ html, body {
+     background: linear-gradient(to bottom, #000000, #096397);
+     height: 100%;
+     margin: 0;
+     background-repeat: no-repeat;
+     background-attachment: fixed; /* Garante que o fundo fique fixo */
+  }
+  
+
+.carousel-container {
+    max-width: 1500px;  /* largura máxima */
+    height: 500px;     /* altura fixa */
+    margin: 0 auto;    /* centraliza */
+    width: 700px;
+  }
+
+  .carousel-container .carousel-inner,
+  .carousel-container .carousel-item,
+  .carousel-container img {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .custom-navbar {
+  background-color: #001d2e; /* azul bonito */
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: white;
+}
+
+.custom-navbar .nav-link.active {
+  color: white !important;
+}
+
+
+  
