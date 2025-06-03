@@ -52,7 +52,7 @@ h1 {
     transition: transform 0.4s;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
-
+ 
 .card:hover {
     transform: scale(1.05);
 }
