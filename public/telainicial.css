@@ -12,6 +12,7 @@
     height: 500px;     /* altura fixa */
     margin: 0 auto;    /* centraliza */
     width: 700px;
+    margin-top: 50px;
   }
 
   .carousel-container .carousel-inner,

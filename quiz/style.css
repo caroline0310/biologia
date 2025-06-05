@@ -1,8 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+   
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     .quiz-wrapper{
         width: 100%;
@@ -76,4 +77,51 @@
         padding: 10px 15px;
         border-radius: 10px;
         box-shadow: rgb(147, 4, 4) 0px 4px 12px;
+    }
+
+    .box {
+        font-size: 20px;
+        background-color: aliceblue;
+        color: #b30000;
+        font-weight: 500;
+        width: 100%;
+        border: 1px solid rgb(126, 59, 59);
+        padding: 10px 15px;
+        margin: 10px 0;
+        text-align: left;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: rgb(147, 4, 4) 0px 4px 12px;
+    }
+
+    .box:hover:not([disabled]) {
+        background-color:#ac3939;
+        color: aliceblue;
+    }
+
+    .box:disabled{
+        cursor: no-drop;
+    }
+
+    #next-question-btn{
+        background-color: #ac3939;
+        color: aliceblue;
+        font-weight: 500;
+        border: 0;
+        padding: 13px 10px;
+        margin: 10px auto 0;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: left;
+        font-size: 15px;
+        display: none;
+    }
+
+    .correct{
+        background: rgb(23, 61, 78);
+    }
+
+    .incorrect{
+        background:rgb(116, 29, 29);
     }
